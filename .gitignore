@@ -2,3 +2,10 @@
 /ClassLibrary1/obj
 /SchoolApp/bin/Debug/net5.0
 /SchoolApp/obj
+/SchoolApp.DataAccess/bin/Debug/net5.0
+/SchoolApp.DataAccess/obj
+/SchoolApp.Tests/bin/Debug/net5.0
+/SchoolApp.Tests/obj/Debug/net5.0
+/SchoolApp.UserManagement/bin/Debug/net5.0
+/SchoolApp.UserManagement/obj
+/SchoolApp.Tests/obj
