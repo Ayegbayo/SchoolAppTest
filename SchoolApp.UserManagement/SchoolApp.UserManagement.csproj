@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\SchoolApp.Data.csproj" />
+    <ProjectReference Include="..\SchoolApp.DataAccess\SchoolApp.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
