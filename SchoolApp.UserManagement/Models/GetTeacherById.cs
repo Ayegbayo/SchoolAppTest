@@ -1,16 +1,15 @@
 ﻿using MediatR;
 using SchoolApp.Data.Enums;
 using System;
-using System.Collections.Generic;
 
 namespace SchoolApp.UserManagement.Models
 {
-    public class GetTeachersQuery : IRequest<APIResponse>
+    public class GetTeacherByIdQuery : IRequest<APIResponse>
     {
-
+        public int Id { get; set; }
     }
-    
-    public class GetTeachersModel
+
+    public class GetTeacherByIdModel
     {
         public string TeacherNumber { get; set; }
         public string Name { get; set; }

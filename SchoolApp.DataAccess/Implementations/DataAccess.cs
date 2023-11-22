@@ -31,6 +31,22 @@ namespace SchoolApp.DataAccess.Implementations
             return items;
         }
 
+        public List<T> GetWhere(Func<T, bool> predicate)
+        {
+            var items = GetAll().Where(predicate);
+            return items.ToList();
+        }
+
+        public bool Any(Func<T, bool> predicate)
+        {
+            return GetAll().Any(predicate);            
+        }
+
+        public void Delete(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+
         public async Task<T> GetById(int id)
         {
             var item = await _context.Set<T>().FindAsync(id);
